@@ -67,6 +67,9 @@
             this.fromImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fromVideoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fromCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanFromImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanFromVideoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanFromCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fullScreenPanel.SuspendLayout();
             this.FooterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarContrast)).BeginInit();
@@ -296,7 +299,6 @@
             this.gaussianToolStripMenuItem.Name = "gaussianToolStripMenuItem";
             this.gaussianToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.gaussianToolStripMenuItem.Text = "Smooth Blur";
-            this.gaussianToolStripMenuItem.Click += new System.EventHandler(this.gaussianToolStripMenuItem_Click);
             // 
             // bilateralBlurToolStripMenuItem
             // 
@@ -363,7 +365,10 @@
             this.faceDetectionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fromImageToolStripMenuItem,
             this.fromVideoToolStripMenuItem,
-            this.fromCameraToolStripMenuItem});
+            this.fromCameraToolStripMenuItem,
+            this.humanFromImageToolStripMenuItem,
+            this.humanFromVideoToolStripMenuItem,
+            this.humanFromCameraToolStripMenuItem});
             this.faceDetectionToolStripMenuItem.Name = "faceDetectionToolStripMenuItem";
             this.faceDetectionToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.faceDetectionToolStripMenuItem.Text = "Face Detection";
@@ -371,23 +376,42 @@
             // fromImageToolStripMenuItem
             // 
             this.fromImageToolStripMenuItem.Name = "fromImageToolStripMenuItem";
-            this.fromImageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fromImageToolStripMenuItem.Text = "From image";
+            this.fromImageToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.fromImageToolStripMenuItem.Text = "Face From image";
             this.fromImageToolStripMenuItem.Click += new System.EventHandler(this.fromImageToolStripMenuItem_Click);
             // 
             // fromVideoToolStripMenuItem
             // 
             this.fromVideoToolStripMenuItem.Name = "fromVideoToolStripMenuItem";
-            this.fromVideoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fromVideoToolStripMenuItem.Text = "From Video";
+            this.fromVideoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.fromVideoToolStripMenuItem.Text = "Face From Video";
             this.fromVideoToolStripMenuItem.Click += new System.EventHandler(this.fromVideoToolStripMenuItem_Click);
             // 
             // fromCameraToolStripMenuItem
             // 
             this.fromCameraToolStripMenuItem.Name = "fromCameraToolStripMenuItem";
-            this.fromCameraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fromCameraToolStripMenuItem.Text = "From Camera";
+            this.fromCameraToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.fromCameraToolStripMenuItem.Text = "Face From Camera";
             this.fromCameraToolStripMenuItem.Click += new System.EventHandler(this.fromCameraToolStripMenuItem_Click);
+            // 
+            // humanFromImageToolStripMenuItem
+            // 
+            this.humanFromImageToolStripMenuItem.Name = "humanFromImageToolStripMenuItem";
+            this.humanFromImageToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.humanFromImageToolStripMenuItem.Text = "Human From Image";
+            this.humanFromImageToolStripMenuItem.Click += new System.EventHandler(this.humanFromImageToolStripMenuItem_Click);
+            // 
+            // humanFromVideoToolStripMenuItem
+            // 
+            this.humanFromVideoToolStripMenuItem.Name = "humanFromVideoToolStripMenuItem";
+            this.humanFromVideoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.humanFromVideoToolStripMenuItem.Text = "Human From Video";
+            // 
+            // humanFromCameraToolStripMenuItem
+            // 
+            this.humanFromCameraToolStripMenuItem.Name = "humanFromCameraToolStripMenuItem";
+            this.humanFromCameraToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.humanFromCameraToolStripMenuItem.Text = "Human from Camera";
             // 
             // Form1
             // 
@@ -399,6 +423,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Image Processing";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.fullScreenPanel.ResumeLayout(false);
             this.FooterPanel.ResumeLayout(false);
             this.FooterPanel.PerformLayout();
@@ -452,6 +477,9 @@
         private System.Windows.Forms.ToolStripMenuItem fromImageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fromVideoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fromCameraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem humanFromImageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem humanFromVideoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem humanFromCameraToolStripMenuItem;
     }
 }
 

@@ -147,6 +147,12 @@
   <ItemGroup>
     <Content Include="data\haarcascade_eye.xml" />
     <Content Include="data\haarcascade_frontalface_default.xml" />
+    <Content Include="data\haarcascade_fullbody.xml" />
+    <Content Include="data\haarcascade_lowerbody.xml" />
+    <Content Include="data\haarcascade_profileface.xml" />
+    <Content Include="data\haarcascade_upperbody.xml" />
+    <Content Include="data\lbpcascade_frontalface.xml" />
+    <Content Include="data\lbphuman.xml" />
     <Content Include="icon.ico" />
     <None Include="Resources\AngryCartoon.png" />
     <None Include="Resources\errorCartoon.jpg" />
